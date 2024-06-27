@@ -240,10 +240,10 @@ button:hover {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-    position: absolute;
-    top: -100%;
+    position: relative;
+    top: -200%;
 }
 
 .show-update {
-    top: 25%;
+    top: 0%;
 }
