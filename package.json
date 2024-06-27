@@ -1,0 +1,16 @@
+{
+  "name": "project",
+  "dependencies": {
+    "firebase": "^10.12.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "vite": "latest"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
