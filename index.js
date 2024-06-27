@@ -169,7 +169,13 @@ function showUpdateProfile() {
 
 function authUpdateProfile() {
     const newDisplayName = displayNameInputEl.value
-    const newPhotoURL = photoURLInputEl.value
+    let newPhotoURL
+
+    if (photoURLInputEl.value === "") {
+        newPhotoURL = "https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg"
+    } else {
+        newPhotoURL = photoURLInputEl.value
+    }
 
     updateProfile(auth.currentUser, {
         displayName: newDisplayName, photoURL: newPhotoURL
