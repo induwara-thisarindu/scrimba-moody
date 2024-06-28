@@ -7,6 +7,10 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Calistoga&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 		<link rel="stylesheet" href="index.css">
     </head>
 
@@ -52,6 +56,45 @@
                         <button id="update-profile-btn" class="primary-btn">Update profile</button>
                     </div>
 
+                    <div class="mood-emojis">
+                        <button id="mood-1" class="mood-emoji-btn">
+                            <img src="assets/emojis/1.png">
+                            Awful
+                        </button>
+                        <button id="mood-2" class="mood-emoji-btn">
+                            <img src="assets/emojis/2.png">
+                            Bad
+                        </button>
+                        <button id="mood-3" class="mood-emoji-btn">
+                            <img src="assets/emojis/3.png">
+                            Meh
+                        </button>
+                        <button id="mood-4" class="mood-emoji-btn">
+                            <img src="assets/emojis/4.png">
+                            Good
+                        </button>
+                        <button id="mood-5" class="mood-emoji-btn">
+                            <img src="assets/emojis/5.png">
+                            Amazing
+                        </button>
+                    </div>
+
+                    <div class="post-section">
+                        <textarea id="post-input" placeholder="Write down how you're feeling..."></textarea>
+                        <button id="post-btn" class="primary-btn">Post</button>
+                    </div>
+
+                    <div class="filters-and-posts-section">
+                        <div class="filters-section">
+                            <button id="today-filter-btn" class="filter-btn">Today</button>
+                            <button id="week-filter-btn" class="filter-btn">Week</button>
+                            <button id="month-filter-btn" class="filter-btn">Month</button>
+                            <button id="all-filter-btn" class="filter-btn">All</button>
+                        </div>
+                        
+                        <div id="posts" class="posts-section">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
